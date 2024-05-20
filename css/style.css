@@ -1,0 +1,314 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+    
+}
+
+:root{
+
+    --gold: #F9B529;
+    --green: #496035;
+    --gray-very-dark: #181818;
+    --gray-dark: #4A505C;
+    --gray: #B9B9C1;
+    --gray-soft: #F5F5F5;
+    --white: #FFFF;
+    --white-ghost: rgba(255, 255, 255, 0.16);
+
+
+}
+
+body{
+
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.832)), url(https://images5.alphacoders.com/133/1332772.png) no-repeat;
+   background-size: cover;
+
+}
+
+.card{
+
+    width: 500px;
+    min-height: 1000px;
+    margin: 200px auto;
+    background: var(--gray-soft);
+    border-radius: 65px 65px 60px 60px;
+    align-items: center;
+    color: var(--gray-very-dark);
+    box-shadow: -1px 15px 30px -12px black;
+}
+
+.card__top{
+
+    width: 500px;
+    position: relative;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(https://external-preview.redd.it/IDXxxWhwhhKGmBLjYI8n3L4e7p_4vf5T2vNLSuPcBfk.jpg?auto=webp&s=ccec57c481630ec03658f007089d85d45cb40b53);
+    background-size: cover;
+    border-radius: 60px 60px 60px 60px;
+    align-items: center;
+    min-height: 550px;
+    
+
+
+    .image__title{
+
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        width: 100px;
+        opacity: 0.1;
+
+    }
+
+
+    .image__ellie--shadow{
+
+        position: absolute;
+        bottom: 0px;
+        right: 20px;
+        width: 450px;
+        border-bottom-right-radius: 60px;
+        filter: blur(15px) brightness(0);
+        opacity: 0.4;
+        
+
+    }
+
+    .image__ellie{
+
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 450px;
+        border-bottom-right-radius: 60px;  
+        z-index: 1;
+    }
+
+    .button__tertiary{
+
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    border-radius: 20px;
+    background: var(--white-ghost);
+    padding: 20px;
+
+
+
+
+    }
+
+
+}
+
+.card__content{
+
+    
+    padding:32px;
+    position: relative;
+
+
+        }
+
+
+
+.rating{
+
+            background-color: var(--white);
+            border-radius: 999px;
+            padding: 6px 12px;
+            position: relative;
+        
+    
+            .rating__number{
+        
+                font-size: 18px;
+                font-weight: 500;
+                
+                
+            }
+    
+            .rating__star{
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                bottom: 6px;
+                left: 42px;
+            }
+            
+           width: 78px;
+           height: auto;
+    
+ }
+
+
+    .header__title{
+
+        position: relative;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 36px;
+        font-weight: 800;
+        height: fit-content;
+        /* PARENT */
+
+
+        
+
+    }
+
+
+
+
+
+
+.header__tags{
+
+        display: inline-block;
+        color:var(--green);
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: -0.32px;
+        margin-right: 12px;
+        margin-bottom: 22px;
+
+}
+
+
+.tags__bg{
+            
+    background-color: var(--white);
+    width: fit-content;
+    padding: 6px 16px;
+    border-radius: 8px;
+}
+
+
+.content__header{
+
+    position: relative;
+
+}
+
+/* 
+position absolute busca el parent
+del contenedor más cecano, tuve que
+hacerle un contenedor extra al titulo y a los tags
+para que funcionara el position absolute
+*/
+
+.button__secondary{
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.content__paragraph{
+
+    color: var(--gray-dark);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 38.5px;
+    margin-bottom: 32px;
+
+}
+
+.card__bottom{
+
+    display: flex;
+    padding: 32px;
+    gap: 23px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    border-radius: 40px;
+    background: var(--white);
+
+
+    
+.card__price--info{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+
+    .card__price--info-text{
+
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    
+        .card__price--dollar{
+    
+            color: var(--gray-dark);
+            font-size: 26px;
+            font-weight: 400;
+    
+        }
+    
+        .card__price--amount{
+    
+            color: var(--gray-very-dark);
+            font-size: 36px;
+            font-weight: 700;
+    
+        }
+    
+    }
+
+    .card__price-label{
+
+        color: var(--gray);
+        font-size: 20px;
+        font-weight: 400px;
+
+    }
+
+
+
+
+
+}
+
+.button__primary{
+
+        display: flex;
+        
+        background-color: var(--green);
+        border-radius: 24px;
+        padding: 24px 62px;
+        gap: 14px;
+    
+    .button__primary--text{
+
+        color: var(--white);
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 0.72px;
+
+
+    }
+
+
+
+
+}
+
+
+}
+
+
+/* 
+Corrección para que los iconos
+queden centrados 
+*/
+.button__icon{
+
+    padding-top: 3px;
+
+}
